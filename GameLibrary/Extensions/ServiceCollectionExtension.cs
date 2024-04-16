@@ -13,7 +13,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration config)
         {
-            var connectionString = config.GetConnectionString("DefaultConnection");
+            
+            var connectionString = config.GetConnectionString("DevelopmentConnection");
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
             services.AddDatabaseDeveloperPageExceptionFilter();

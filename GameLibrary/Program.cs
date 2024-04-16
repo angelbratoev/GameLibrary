@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddApplicationDbContext(builder.Configuration);
+builder.Services.AddApplicationDbContext(builder.Configuration); // TODO: Change to default connection string, when want to use out of development
 builder.Services.AddApplicationIdentity(builder.Configuration);
 
 builder.Services.AddControllersWithViews();
