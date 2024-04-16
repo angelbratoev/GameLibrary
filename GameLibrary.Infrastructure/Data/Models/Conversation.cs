@@ -24,6 +24,6 @@ namespace GameLibrary.Infrastructure.Data.Models
 
 		public IList<Message> Messages { get; set; } = new List<Message>();
 
-		public IList<UserConversation> UsersConversations { get; set; } = new List<UserConversation>();
+		public IList<UserConversation> UserConversations { get; set; } = new List<UserConversation>();
 	}
 }

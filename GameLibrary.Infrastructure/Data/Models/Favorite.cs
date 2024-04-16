@@ -21,7 +21,7 @@ namespace GameLibrary.Infrastructure.Data.Models
 
 		[Comment("User identifier")]
 		[Required]
-		public int UserId { get; set; }
+		public string UserId { get; set; }
 
 		[Required]
 		[ForeignKey(nameof(UserId))]

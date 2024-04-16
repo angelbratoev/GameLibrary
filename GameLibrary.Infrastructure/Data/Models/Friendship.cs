@@ -5,8 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GameLibrary.Infrastructure.Data.Models
 {
-	public class UserFriend
+	public class Friendship
 	{
+		[Comment("Friendship identifier")]
+		[Key]
+		public int Id { get; set; }
+
 		[Comment("User identifier")]
 		[Required]
 		public string UserId = string.Empty;
